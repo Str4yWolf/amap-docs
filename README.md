@@ -1,11 +1,11 @@
-﻿#AMAP Docs
+﻿# AMAP Docs
 AMAP - Advanced Manuscript Analysis Portal - is a software tool to aid the study of manuscripts. This documentation should be helpful in guiding you through the onboarding process, app navigation, and functinality.
+
 
 ```
 Table of contents
 0. Introduction
 1. Getting started
-
 2. Main Menu
 3. Functionality (Action Chips)
 4. Image View Settings (Plugs)
@@ -17,7 +17,7 @@ Table of contents
 ## 0. Introduction
 AMAP is a platform-independent tool that includes a toolbox of document image analysis (DIA) functions. By providing a graphical user interface (GUI), it aims to make elements of traditional programming available to everyone without having to learn an actual programming language. Instead, AMAP uses ***Visual Programming*** to allow its users to generate and combine blocks to build their own image processing solutions. 
 
-AMAP is a joint effort by the Image Processing Department of the University of Hamburg and is partly funded by the DFG (German research association) and SFB (Department of special studies). It is an open-source project.
+AMAP is a joint effort by the [Image Processing Department of the University of Hamburg](https://www.inf.uni-hamburg.de/en/inst/ab/bv.html) and is partly funded by the DFG (German research association) and SFB (Department of special studies). It is an open-source project.
 
 
 
@@ -26,19 +26,19 @@ AMAP Version 2.0 is currently available under https://bv.informatik.uni-hamburg.
 
 
 ### 1.1 Loading an image
-Our first goal is to load some data into the **central workspace** of AMAP where you will perform your DIA tasks. 
+Our first goal is to load some data into the ***central workspace*** of AMAP where you will perform your DIA tasks. 
 
-To load your image, click the "+" icon on the **main menu** located at the top. Browse and select an image from your computer to upload it. 
+To load your image, click the "+" icon on the ***main menu*** located at the top. Browse and select an image from your computer to upload it. 
 
-> Your image should be in a JPG format for all functions to work properly. To check what image format your image is, upload the image and double click it to flip it over. Check to confirm whether the file name ends in .jpg, jpeg, .JPG, or JPEG.
+> Your image should be in a **JPG format** for all functions to work properly. To check what image format your image is, upload the image and double click it to flip it over. Check to confirm whether the file name ends in .jpg, jpeg, .JPG, or JPEG.
 
 
 ### 1.2 Action chips
-With your image in the workspace, we are all set up to perform some DIA. The "functions menu" on the right contains the respective functions for image processing, whereas the "image settings menu" at the bottom allows for temporal image view settings (see 1.4).
+With your image in the workspace, we are all set up to perform some DIA. The ***functions menu*** on the right contains the respective functions for image processing, whereas the "image settings menu" at the bottom allows for temporal image view settings (see **1.4**).
 
-Functions in AMAP are provided as so-called **action chips** which you can generate by double-clicking on an item in one of the dropdowns of the functions menu.
+Functions in AMAP are provided as so-called ***action chips*** which you can generate by double-clicking on an item in one of the dropdowns of the functions menu.
 
-A corresponding action chip will be generated that you can attach to your image to perform its corresponding function. Many blocks allow for  adjustable parameters settings which you can toggle by clicking the gear icon. For instance, the Binarization block at the very top of the functions menu lets you adjust a threshold with a circular slider.
+A corresponding action chip will be generated that you can attach to your image to perform its corresponding function. Many blocks allow for adjustable parameters settings which you can toggle by clicking the gear icon. For instance, the Binarization block at the very top of the functions menu lets you adjust a threshold with a circular slider.
 
 A preview will always show what an image looks like after some function has been performed. You can also detach a chip by double clicking on it.
 
@@ -48,6 +48,7 @@ You can also chain compatible action chips which will connect automatically. Inc
 
 Detaching a block here will "split" your chain left of the block which you have clicked.
 
+
 ### 1.4 Plugs
 Plugs apply filters that change the appearance of the image / chip that it is attached to ***temporally*** and will not result in any changes reflected in the final result, unlike action chips.
 
@@ -55,7 +56,7 @@ Plugs apply filters that change the appearance of the image / chip that it is at
 ### 1.5 Deleting blocks
 To delete a block, activate the trash can at the bottom right by double clicking on it. Now drag-&-drop the block you would like to delete.
 
-> Don't forget to deactivate the trash can after you are done deleting to avoid accidentally dragging and deleting blocks.
+> Don't forget to **deactivate** the trash can after you are done deleting to avoid accidentally dragging and deleting blocks.
 
 
 ### 1.6 Saving your data
@@ -66,8 +67,8 @@ To export your results, right-click on the block and select export.
 To save your workspace, press the 2nd icon on the main menu. To load your workspace afterwards, press the 3rd icon of the main menu and select your workspace.
 
 
-## 1.7 How to proceed
-You have now been onboarded to the most basic functionality of AMAP. Please refer to Chapters 2-4 for detailed explanations and documentation. Chapter 5 elaborates on Advanced topics such how to work with image stacks (batch operation) and using tools to create an efficient workflow.
+### 1.7 How to proceed
+You have now been onboarded to the most basic functionality of AMAP. Please refer to **Chapters 2-4** for detailed explanations and documentation. **Chapter 5** elaborates on Advanced topics such how to work with image stacks (batch operation) and using tools to create an efficient workflow.
 
 
 
@@ -401,4 +402,4 @@ This chapter deals with some more advanced topics.
 ### 5.3 Fine-tuning
 
 
-3:37
+3:57
