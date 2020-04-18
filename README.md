@@ -71,7 +71,7 @@ To save your workspace, press the ***2nd icon*** on the main menu. To load your 
 
 
 ### 1.7 How to proceed
-You have now been onboarded to the most basic functionality of AMAP. Please refer to **Chapters 2-4** for detailed explanations and documentation. **Chapter 5** elaborates on Advanced topics such how to work with image stacks (batch operation) and using tools to create an efficient workflow.
+You have now been onboarded to the most basic functionality of AMAP. Please refer to **Chapters 2-5** for detailed explanations and documentation. **Chapter 6** elaborates on Advanced topics such how to work with image stacks (batch operation) and using tools to create an efficient workflow.
 
 
 
