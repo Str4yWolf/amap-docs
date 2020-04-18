@@ -117,11 +117,18 @@ Here we will inspect the functionality and parameters of the action chips (right
 
 
 ### 3.1 Binarization
-Type: Image Processing
-Input: Image
-Output: Image
-Parameters: Threshold (range 0 - 255)
-Functionality: Image binarization maps all image pixel values of the input image to a binary range of 0 (black pixels) and 1 (white pixels). The threshold defines the lower bound at which a value of 1 should be assigned. Binarization takes the mean of all RGB colour channels.
+#### 3.1.1 OpenCV Binarization
+**Type:** Image Processing
+
+**Input:** Image
+
+**Output:** Image
+
+**Parameter 1:** Type { 0: THRESH_BINARY, 1: THRESH_BINARY_INV, 2: THRESH_TRUNC, 3: THRESH_TOZERO, 4: THRESH_TOZERO_INV }
+
+**Parameter 2:** Threshold (range 0 - 255)
+
+**Functionality:** Image binarization maps all image pixel values of the input image to a binary value of 0 or 1. The threshold defines the lower bound at which a value of 1 should be assigned. Binarization takes the mean of all RGB colour channels.
 
 
 ### 3.2 Histogram Eq Color
