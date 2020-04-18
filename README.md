@@ -325,9 +325,9 @@ Here we will inspect the functionality and parameters of the action chips (right
 
 **Parameter 1:** threshold (range 0 - 400)
 
-**Parameter 2:** min_length(range 0 - 1000)
+**Parameter 2:** min_length (range 0 - 1000)
 
-**Parameter 3:** max_gap(range 0 - 100)
+**Parameter 3:** max_gap (range 0 - 100)
 
 **Functionality**: Adds hough lines to the image.
 
@@ -363,54 +363,103 @@ Here we will inspect the functionality and parameters of the action chips (right
 
 
 ### 3.7
-### 3.6.1 Tesseract Lines
-Type: Layout Analysis
-Input: Image
-Output: Image with layout structure
-Parameters:
-Functionality: Detects the layout of the image.
+### 3.7.1 Tesseract Lines
+**Type:** Layout Analysis
 
-### 3.6.2 Tesseract Characters
-Type: Layout Analysis
-Input: Image
-Output: Image with layout structure
-Parameters:
-Functionality: Detects the layout of the image.
+**Input:** Image
+
+**Output:** Segmented Image (terminal)
+
+**Functionality:** Adds bounding boxes around visual components.
+
+
+### 3.7.2 Tesseract Characters
+**Type:** Layout Analysis
+
+**Input:** Image
+
+**Output:** Segmented Image (terminal)
+
+**Functionality:** Adds bounding boxes around small visual components.
+
 
 ### 3.6.3 Histogram Lines
-Type: Layout Analysis
-Input: Image
-Output: Image with layout structure
-Parameters:
-Functionality: Detects the layout of the image.
+**Type:** Layout Analysis
 
-### 3.6.4 Kraken Lines
-Type: Layout Analysis
-Input: Image
-Output: Image with layout structure
-Parameters:
-Functionality: Detects the layout of the image.
+**Input:** Image
 
-### 3.6.5 TopBase Lines
-Type: Layout Analysis
-Input: Image
-Output: Image with layout structure
-Parameters:
-Functionality: Detects the layout of the image.
+**Output:** Segmented Image (terminal)
 
-### 3.6.6 MidInter Lines
-Type: Layout Analysis
-Input: Image
-Output: Image with layout structure
-Parameters:
-Functionality: Detects the layout of the image.
+**Functionality:** Adds lines.
 
-### 3.6.7 All Lines
-Type: Layout Analysis
-Input: Image
-Output: Image with layout structure
-Parameters:
-Functionality: Detects the layout of the image.
+
+### 3.7.4 Kraken Lines
+**Type:** Layout Analysis
+
+**Input:** Image
+
+**Output:** Segmented Image (terminal)
+
+**Functionality:** Adds lines.
+
+
+### 3.7.5 TopBase Lines
+**Type:** Morphology
+
+**Input:** Image
+
+**Output:** Image
+
+**Parameter 1:** scale (range 0 - 400)
+
+**Parameter 2:** theta (range 0 - 2)
+
+**Functionality:** 
+
+
+### 3.7.6 MidInter Lines
+**Type:** Morphology
+
+**Input:** Image
+
+**Output:** Image
+
+**Parameter 1:** scale (range 0 - 400)
+
+**Parameter 2:** theta (range 0 - 2)
+
+**Functionality:** 
+
+
+### 3.7.7 All Lines
+**Type:** Morphology
+
+**Input:** Image
+
+**Output:** Image
+
+**Parameter 1:** scale (range 0 - 400)
+
+**Parameter 2:** theta (range 0 - 2)
+
+**Functionality:** 
+
+
+
+
+**Type:** Morphology
+
+**Input:** Image
+
+**Output:** Image
+
+**Parameter 1:**  (range 0 - )
+
+**Parameter 2:** (range 0 - )
+
+**Parameter 3:** (range 0 - )
+
+**Functionality**: .
 
 
 ### 3.7.1 Copy
