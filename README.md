@@ -117,7 +117,7 @@ Here we will inspect the functionality and parameters of the action chips (right
 
 
 ### 3.1 Binarization
-#### 3.1.1 OpenCV Binarization
+### 3.1.1 OpenCV Binarization
 **Type:** Image Processing
 
 **Input:** Image
@@ -131,27 +131,82 @@ Here we will inspect the functionality and parameters of the action chips (right
 **Functionality:** Image binarization maps all image pixel values of the input image to a binary value of 0 or 1. The threshold defines the lower bound at which a value of 1 should be assigned. Binarization takes the mean of all RGB colour channels.
 
 
-### 3.2 Histogram Eq Color
-Type: Image Processing
-Input: Image
-Output: Image
-Parameters: None
-Functionality: It does something to enhance the image.
+### 3.2 Other Image Enhancements
+### 3.2.1 Histogram Eq 
+
+**Type:** Image Processing
+
+**Input:** Image
+
+**Output:** Image
+
+**Functionality:** Improves contrast by equalization; spreading out the most frequent intensity values.
 
 
-### 3.3.1 NonLocal Denoising
-Type: Image Processing
-Input: Image
-Output: Image
-Parameters: filter_strength, template, filter_strength_color, search
-Functionality: It removes noise.
+### 3.3 Noise
+### 3.3.1 NonLocal Denoising (1)
 
-### 3.3.2 Add Random Noise
-Type: Image Processing
-Input: Image
-Output: Image
-Parameters: type(gaussian), mean, std
-Functionality: Adds random noise.
+**Type:** Image Processing
+
+**Input:** Image
+
+**Output: Image
+
+**Parameter 1:** filter_strength (range 0 - 200)
+
+**Parameter 2:** template (range 0 - 50)
+
+**Parameter 3:** search (range 0 - 100)
+
+**Functionality:** Removes noise.
+
+
+### 3.3.2 NonLocal Denoising (2)
+
+**Type:** Image Processing
+
+**Input:** Image
+
+**Output: Image
+
+**Parameter 1:** filter_strength (range 0 - 50)
+
+**Parameter 2:** filter_strength_color (range 0 - 50)
+
+**Parameter 3:** template (range 0 - 50)
+
+**Parameter 4:** search (range 0 - 100)
+
+**Functionality:** Removes noise.
+
+
+### 3.3.3 Add Random Noise
+
+**Type:** Image Processing
+
+**Input:** Image
+
+**Output:** Image
+
+**Parameter 1:** type { 0: gaussian, 1: localvar, 2: poisson, 3: salt, 4: pepper, 5: s&p, 6: speckle }
+
+**Parameter gaussian 2:** mean (range 0 - 1)
+
+**Parameter gaussian 3:** var (range 0 - 1)
+
+**Parameter salt 2:** amount (range 0 - 1)
+
+**Parameter pepper 2:** amount (range 0 - 1)
+
+**Parameter s&p 2:** amount (range 0 - 1)
+
+**Parameter s&p 3:** salt_vs_pepper (range 0 - 1)
+
+**Parameter speckle 2:** mean (range 0 - 1)
+
+**Parameter speckle 3:** var (range 0 - 1)
+
+**Functionality:** Adds random noise according to the chosen type and parameters.
 
 
 ### 3.3.1 Blur
