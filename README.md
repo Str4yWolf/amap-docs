@@ -54,7 +54,7 @@ Plugs apply filters that change the appearance of the image / chip that it is at
 
 
 ### 1.5 Deleting blocks
-To delete a block, activate the trash can at the bottom right by double clicking on it. Now drag-&-drop the block you would like to delete.
+To delete a block, activate the trash can at the bottom right by clicking on it. Now drag-&-drop the block you would like to delete.
 
 > Don't forget to **deactivate** the trash can after you are done deleting to avoid accidentally dragging and deleting blocks.
 
@@ -62,9 +62,11 @@ To delete a block, activate the trash can at the bottom right by double clicking
 ### 1.6 Saving your data
 You can either export your image processing results or save your workspace to continue your task later. 
 
-To export your results, right-click on the block and select export.
+To export your results, right-click on the image preview and select ***Save Image As...*** from the menu.
 
-To save your workspace, press the 2nd icon on the main menu. To load your workspace afterwards, press the 3rd icon of the main menu and select your workspace.
+To save your workspace, press the ***2nd icon*** on the main menu. To load your workspace afterwards, press the ***3rd icon*** of the main menu and select your workspace.
+
+> AMAP saves workspaces as **.JSON** files.
 
 
 ### 1.7 How to proceed
@@ -542,59 +544,120 @@ Here we will inspect the functionality and parameters of the action chips (right
 
 
 ## 4 Image View Settings (Plugs)
-Image View Settings can be found on the bottom menu and can be attached from below to the input chips connected to it. They are simple in that they only adjust one parameter each. They are temporal as they will not apply any actual changes to the exported result.
+Image View Settings can be found on the bottom menu and can be attached from below to input image. They are simple in that they only adjust one parameter each. They are temporal as they will not apply any actual changes to the exported result.
+
+The image preview on the input image will reflect both changes from the plugs and the action chips, but the image preview on top of action chips (toggable by clicking the top monitor icon) will show only the actual result (without effects from the plugs).
 
 
 ### 4.1 Brightness
-Range: 0% - 400%
-Default: 100%
-This setting adjusts the brightness according to the value that you set in the slider. Higher values add "whiteness" to the image.
+**Range:** 0% - 400%
+
+**Default:** 100%
+
+**Functionality:** This setting adjusts the brightness according to the value that you set in the slider. Higher values add "whiteness" to the image, while lower values result in "darkness".
 
 
 ### 4.2 Contrast
-Range: 0% - 400%
-Default: 100%
-This setting adjusts the contrast of your image. Higher values mean that the image pixel values will be pushed to the extremes. I. e., relatively darker pixels will become darker, and relatively brighter pixels will become brighter. Lower contrast values will minimize the difference of the pixel values of darker and brighter pixels.
+**Range:** 0% - 400%
+
+**Default:** 100%
+
+**Functionality:** This setting adjusts the contrast of your image. 
+
+*Higher values* mean that the image pixel values will be pushed to the extremes in terms of saturation. That is, relatively brighter pixels will become brighter, while relatively dark pixels will be changed less. 
+
+*Lower contrast values* will minimize the difference of the pixel values of darker and brighter pixels by reducing the saturation of the brighter pixels. 
 
 
 ### 4.3 Grayscale
-Range: 0% - 100%
-Default: 50%
-This setting maps the colour channels of an image to a grayscale channel. The parameter sets the percentage of the grayscale channel. Towards 0%, the input is retained completely, while at 100% the input is completely grayscale.
+**Range:** 0% - 100%
+
+**Default:** 50%
+
+**Functionality:** This setting maps the colour channels of an image to a grayscale channel. Its corresponding parameter sets the percentage of the grayscale channel vs. the RGB channels of the original image. Towards 0%, the input is retained completely, while at 100% the image will be completely grayscale.
 
 
-### 4.4 Invert Colours
-Range: 0% - 100%
-Default: 50%
-This setting maps the colours of the input to their complementary colours with regard to the colour channel(s). For example, a pixel with RGB (100, 200, 0) will be mapped to RGB (155, 55, 255), as the range of each colour channel lies within [0. 255].
+### 4.4 Invert Colors
+**Range:** 0% - 100%
+
+**Default:** 50%
+
+**Functionality:** This setting maps the colours of the input to their complementary colours with regard to the colour channel(s), where the percentage describes the prominence of the inverted values.
+
+For example, a pixel with RGB (100, 200, 0) will be mapped to RGB (155, 55, 255) given parameter value 100%, as the range of each colour channel lies within (0, 255) (inclusive) and we would be looking for the complimentary value given the upper bound 255.
 
 At 0%, the input is retained fully, while at 100%, all image pixel values are fully inverted.
 
+A value of 50% means that original and inverted image pixel values level each other out, resulting in an intermediate gray value.
+
+
 
 ### 4.5 Opacity
-Range: 0% - 100%
-Default: 50%
-This setting adjusts the transparency of an image. At 100%, the image is fully visible, while at 0%, the image is invisible.
+**Range:** 0% - 100%
+
+**Default:** 50%
+
+**Functionality:** This setting adjusts the transparency of an image. At 100%, the image is fully visible, while at 0%, the image is completely invisible.
 
 
 ### 4.6 Hue-Rotate
-Range: 0deg - 359deg
-Default: 0deg
-I have no idea what this thing does.
+**Range:** 0deg - 359deg
+
+**Default:** 0deg
+
+**Functionality:** Rotates the colour values based on the hue on a 360 degree scale. A parameter value of 180 degrees results in the complimentary (inverted) image.
 
 
 
-## 5 Advanced
-This chapter deals with some more advanced topics.
+## 5 Image menu
+The image menu mostly contains simple geographical settings for the input image. It can be found on the bottom left of the input image preview, provided that they are set visible on the ***main menu (11)***.
+
+**Zoom in (1)** increases the scale of the image by about 5% of its current scale.
+
+**Zoom out (2)** decreases the scale of the image by about 5% of its current scale.
+
+**Rotate left (3)** rotates the image by 5 degrees to the left.
+
+**Rotate right (4)** rotates the image by 5 degrees to the right.
+
+**Flip (5)** toggles the notepad (reverse of the input image), displaying the file name, input file type, and provides a simple text tool for you jot down some notes.
+
+**Previous image (6)** (visible with image stacks only) lets you navigate up an image stack.
+
+**Next image (7)** (visible with image stacks only) lets you navigate down an image stack.
+
+**Toggle original image (8)** toggles the original image as if the action chips had not been applied.
 
 
-### 5.1 Stacking images
+## 6 Advanced Topics
+This chapter deals with some more advanced topics and quirks of AMAP. It also elaborates on some points from the previous chapters.
 
 
-### 5.2 Workflows
+
+### 6.1 Practical workflow
+There is no right or wrong way of working with this application. We encourage you to experiment with as many different functions and parameters to find **your** preferred setup. However, we would like to point out some aspects for you to better understand what you can do with AMAP
+
+### 6.1.1 Data flow
+The data flow in AMAP is pretty straightforward. You get your input, apply some action chips, and get an output at the end of the chain of actions. You may ***copy*** your chain of actions and also repeatedly perform that same routine of actions (looping).
+
+You can also branch off to different paths with sub-segments of your image, e.g., when you perform image segmentation. Each branch can then be processed separately.
+
+While the results at the end of your chain(s) of actions can be seen as your input going through that chain, the image view settings and image settings may be best understood as some kind of glasses that you can put on to take a different view on yout input.
 
 
-### 5.3 Fine-tuning
+### 6.1.2 Stacking images
+You can stack images, which allows you to process multiple images with the same routine. When you have multiple images, you can select the one to be previewed by clicking the ***up (6) and down (7) arrows*** of the ***image menu***. As soon as you change the preview, all action chipts and plugs will do their work to update the preview.
 
 
-6:00
+### 6.1.3 Image Previews
+The image preview always shows the image result after going through the action chips' processing and image preview settings. If you prefer, you can always consult intermediate results by clicking on the monitor on top of the action chips (if available). That preview reflects all processing from the input image up to that chip and does not include effects of image view setting filters.
+
+>You can also export intermediate results as shown on the previews by right-clicking the image and selecting **Save Image As ...** from the menu.
+
+
+### 6.2 Shortcuts
+There are a few less obvious shortcuts which you can make use of:
+
+**Copy image** can be done by double-clicking your input image.
+
+**Dumbell** is an icon on the top left of your input image. Its functionality is a mystery.
