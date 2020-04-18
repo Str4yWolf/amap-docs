@@ -362,7 +362,7 @@ Here we will inspect the functionality and parameters of the action chips (right
 **Functionality**: .
 
 
-### 3.7
+### 3.7 Layout Analysis
 ### 3.7.1 Tesseract Lines
 **Type:** Layout Analysis
 
@@ -462,19 +462,24 @@ Here we will inspect the functionality and parameters of the action chips (right
 **Functionality**: .
 
 
-### 3.7.1 Copy
-Type: Propagate actions
-Input: Chain of blocks
-Output: Chain of blocks
-Parameters: None
-Functionality: Copies the chain of blocks that it is attached to
+## 3.8 Propagate Actions
+### 3.8.1 Copy
+**Type:** Workflow
 
-### 3.7.2
-Type: Propagate actions
-Input: Chain of blocks
-Output: Result of compilation
-Parameters: none
-Functionality: Compiles the chain of blocks it is attached to.
+**Input:** Chain of blocks
+
+**Output:** Chain of blocks
+
+**Functionality:** Copies the chain of blocks that it is attached to.
+
+### 3.8.2 Compile
+**Type:** Workflow
+
+**Input:** Chain of blocks
+
+**Output:** Result of compilation
+
+**Functionality:** Compiles the chain of blocks it is attached to.
 
 
 ### 3.8.1 Skeletonize
