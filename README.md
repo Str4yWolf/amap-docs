@@ -303,42 +303,66 @@ Here we will inspect the functionality and parameters of the action chips (right
 **Functionality:** Detects keypoints.
 
 
-### 3.5.1 Hough Line
-Type: Morphology
-Input: Image
-Output: Image with stuctural lines
-Parameters: 
-Functionality: Adds geometric structures to the image.
+### 3.6 Morphology
+### 3.6.1 Hough Line
+**Type:** Morphology
 
-### 3.5.2 Hough Line Prob
-Type: Morphology
-Input: Image
-Output: Image with stuctural lines
-Parameters: 
-Functionality: Adds geometric structures to the image.
+**Input:** Image
 
-### 3.5.3 Skeletonize
-Type: Morphology
-Input: Image
-Output: Image with stuctural lines
-Parameters: 
-Functionality: Adds geometric structures to the image.
+**Output:** Image with stuctural lines
 
-### 3.5.4 Thin
-Type: Morphology
-Input: Image
-Output: Image with stuctural lines
-Parameters: 
-Functionality: Adds geometric structures to the image.
+**Parameter 1:** threshold (range 0 - 400)
 
-### 3.5.5 Medial Arts
-Type: Morphology
-Input: Image
-Output: Image with stuctural lines
-Parameters: 
-Functionality: Adds geometric structures to the image.
+**Functionality**: Adds hough lines to the image.
 
 
+### 3.6.2 Hough Line Prob
+**Type:** Morphology
+
+**Input:** Image
+
+**Output:** Image with stuctural lines
+
+**Parameter 1:** threshold (range 0 - 400)
+
+**Parameter 2:** min_length(range 0 - 1000)
+
+**Parameter 3:** max_gap(range 0 - 100)
+
+**Functionality**: Adds hough lines to the image.
+
+
+### 3.6.3 Skeletonize
+**Type:** Morphology
+
+**Input:** Image
+
+**Output:** Image with stuctural lines
+
+**Functionality**: Adds a skeleton structure to the image according to its visually coherent components.
+
+
+### 3.6.4 Thin (WIP)
+**Type:** Morphology
+
+**Input:** Image
+
+**Output:** Image with stuctural lines
+
+**Functionality**: .
+
+
+### 3.6.5 Medial Axis (WIP)
+**Type:** Morphology
+
+**Input:** Image
+
+**Output:** Image with stuctural lines
+
+**Functionality**: .
+
+
+### 3.7
 ### 3.6.1 Tesseract Lines
 Type: Layout Analysis
 Input: Image
