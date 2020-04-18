@@ -9,7 +9,8 @@ Table of contents
 2. Main Menu
 3. Functionality (Action Chips)
 4. Image View Settings (Plugs)
-5. Advanced Topics
+5. Image Menu
+6. Advanced Topics
 ```
 
 
