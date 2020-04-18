@@ -30,7 +30,7 @@ Our first goal is to load some data into the ***central workspace*** of AMAP whe
 
 To load your image, click the "+" icon on the ***main menu*** located at the top. Browse and select an image from your computer to upload it. 
 
-> Your image should be in a **JPG format** for all functions to work properly. To check what image format your image is, upload the image and double click it to flip it over. Check to confirm whether the file name ends in .jpg, jpeg, .JPG, or JPEG.
+> Your image should be in a **JPG format** for all functions to work properly. To check what image format your image is, upload the image and click on the ***flip over icon (5)***  on the ***image menu*** (detailed in **Chapter 5**) to toggle the notepad. Check to confirm whether the file name ends in .jpg, jpeg, .JPG, or JPEG.
 
 
 ### 1.2 Action chips
@@ -77,18 +77,18 @@ This chapter explains the Main Menu, helping you understand and navigate through
 
 
 ### 2.1 File operations
-The basic file operations are basically what we have already seen in Chapter 1. You can load an image (1), save your workspace (2), and load that workspace (3).
+The basic file operations are basically what we have already seen in **Chapter 1**. You can ***add an image (1)***, ***save your workspace (2)***, and ***load a workspace (3)***.
 
 ### 2.1.1 Image stack
-You can also load multiple images while browsing through your computer. This will load a stack of images rhat you can unstack and stack again as you like.
+You can also load multiple images from your computer. This will load a stack of images that you can slide through using the ***up (6)*** and ***down (7) arrows*** on the image menu. DIA will be performed on the image that is shown on the stack.
 
 
 ### 2.2 Ruler, Protractor
-You can use geographic tools such as a ruler (4) and a protractor (5) that will be loaded into the workspace.
+You can use geographic tools such as a ***ruler (4)*** and a ***protractor (5)*** that will be loaded into the workspace.
 
-The ruler has two draggable dots connected by a straight line. The line's length is displayed in pixels and changes according to how you move the dots.
+The ***ruler*** has two draggable dots connected by a straight line. The line's length is displayed in pixels and changes according to how you move the dots.
 
-The protractor consists of three dots. The middle dot, which is connected to the other two dots by sa traight line each, displays the angle in degrees the two lines shape at this dot. All dots can be dragged.
+The ***protractor*** consists of three dots. The middle dot, which is connected to the other two dots by sa traight line each, displays the angle in degrees the two lines shape at this dot. All dots can be dragged.
 
 
 ### 2.3 Selection rectangle
@@ -96,19 +96,19 @@ This tool lets you select a rectangular subregion or region of interest (ROI) wi
 
 
 ### 2.4 Toggable objects
-You can toggle the visibility of all objects (6), or toggle the visibilility of some elements.
+You can toggle the visibility of all objects from the functions and image view settings menus with ***hide all objects (6)***, or toggle the visibilility of some elements as described in the following:
 
-Toggle lines (8) lets you toggle the lines.
+***Toggle lines (8)*** lets you toggle the lines.
 
-Hide image icons (11) will hide the image icons of blocks when you don't need them.
+***Hide image icons (11)*** toggles the icons on the ***image menu***.
 
 
 ## 2.5 Information display
 There are also some information diplay menus.
 
-The logs (9) will toggle a history of action you have done on the left side. You can see all the details regarding what function with what parameters you have used, and when you did it. 
+The ***logs (9)*** will toggle a history of action you have done on the left side. You can see all the details and previews regarding what function with what parameters you have used, and when you did it. You may redo actions or delete them from the activity log.
 
-Show scale and tilt (10) displays the scale of an image relative to its original size and its tilt (rotation) in degrees.
+***Show scale and tilt (10)*** displays the scale of an image relative to its original size and its tilt (rotation) in degrees. It also shows the scaled image dimensions in pixels.
 
 
 
@@ -597,4 +597,4 @@ This chapter deals with some more advanced topics.
 ### 5.3 Fine-tuning
 
 
-5:00
+6:00
