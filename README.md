@@ -472,6 +472,7 @@ Here we will inspect the functionality and parameters of the action chips (right
 
 **Functionality:** Copies the chain of blocks that it is attached to.
 
+
 ### 3.8.2 Compile
 **Type:** Workflow
 
@@ -482,19 +483,25 @@ Here we will inspect the functionality and parameters of the action chips (right
 **Functionality:** Compiles the chain of blocks it is attached to.
 
 
-### 3.8.1 Skeletonize
-Type: Contours
-Input: Image
-Output: Image with structure
-Parameters:
-Functionality: Adds a skeleton to the input.
+### 3.9 Contours
+### 3.9.1 Skeletonize
+**Type:** Morphology
 
-### 3.8.2 Contour
-Type: Contours
-Input: Image
-Output: Image with contours
-Parameters:
-Functionality: Adds a contour to the input.
+**Input:** Image
+
+**Output:** Image with stuctural lines
+
+**Functionality**: Adds a skeleton structure to the image according to its visually coherent components.
+
+
+### 3.9.2 Contour
+**Type:** Morphology
+
+**Input:** Image
+
+**Output:** Image with stuctural lines
+
+**Functionality**: Traces the contour of the image according to its visible edges.
 
 
 ### 3.9 Word Spot.
