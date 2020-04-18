@@ -383,7 +383,7 @@ Here we will inspect the functionality and parameters of the action chips (right
 **Functionality:** Adds bounding boxes around small visual components.
 
 
-### 3.6.3 Histogram Lines
+### 3.7.3 Histogram Lines
 **Type:** Layout Analysis
 
 **Input:** Image
