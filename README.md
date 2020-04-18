@@ -445,23 +445,6 @@ Here we will inspect the functionality and parameters of the action chips (right
 **Functionality:** 
 
 
-
-
-**Type:** Morphology
-
-**Input:** Image
-
-**Output:** Image
-
-**Parameter 1:**  (range 0 - )
-
-**Parameter 2:** (range 0 - )
-
-**Parameter 3:** (range 0 - )
-
-**Functionality**: .
-
-
 ## 3.8 Propagate Actions
 ### 3.8.1 Copy
 **Type:** Workflow
@@ -504,35 +487,57 @@ Here we will inspect the functionality and parameters of the action chips (right
 **Functionality**: Traces the contour of the image according to its visible edges.
 
 
-### 3.9 Word Spot.
-Type: Recognition
-Input: Image
-Output: Image with ROIs of guessed word entities
-Parameters:
-Functionality: Highlights areas where the algorithm detects possible candidates for words.
+### 3.10 Spotting
+### 3.10.1 Word Spot.
+**Type:** Recognition
+
+**Input:** Image
+
+**Output:** Image with ROIs of guessed word entities
+
+**Parameter 1:** method { 0: Corr, 1: SIFT }
+
+**Parameter 2:** threshold (range 0 - 1)
+
+**Functionality:** Highlights areas where the algorithm detects possible candidates for words.
 
 
-### 3.10 Writer Identification
-Type: Classification
-Input: Image
-Output: Class
-Parameters:
-Functionality: Tries to identify the scribe of a manuscript.
+### 3.11 Writer Identification
+### 3.11.1 NBNN
+**Type:** Classification
+
+**Input:** Image
+
+**Output:** Class
+
+**Parameter 1:** method { 0: SIFT, 1: FAST }
+
+**Parameter SIFT 2:** rotation (range 0 - 359)
+
+**Parameter FAST 2:** keypoints (range 0 - 100)
+
+**Functionality:** Tries to identify the scribe of a manuscript.
 
 
-#### 3.11.1 Manual text
-Type: Transcription
-Input: Image
-Output: Text
-Parameters:
-Functionality: Lets you label the image with texts you write yourself.
+### 3.12 Transcription
+### 3.12.1 Manual text
+**Type:** Transcription
 
-### 3.11.12 OCR text
-Type: Transcription
-Input: Image
-Output: Text
-Parameters:
-Functionality: Lets you label the image with texts that an algorithm detects.
+**Input:** Image
+
+**Output:** Textfield (terminal)
+
+**Functionality:** Lets you label the image with texts you write yourself.
+
+
+### 3.12.2 OCR text
+**Type:** Transcription
+
+**Input:** Image
+
+**Output:** Text (terminal)
+
+**Functionality:** Lets you label the image with texts that an algorithm detects.
 
 
 
