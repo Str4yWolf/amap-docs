@@ -209,33 +209,58 @@ Here we will inspect the functionality and parameters of the action chips (right
 **Functionality:** Adds random noise according to the chosen type and parameters.
 
 
-### 3.3.1 Blur
-Type: Image Processing
-Input: Image
-Output: Image
-Parameters: mean, std
-Functionality: Blurs the image.
+### 3.4 Filters
+### 3.4.1 Blur
+**Type:** Image Processing
 
-### 3.3.2 Gaussian Blur
-Type: Image Processing
-Input: Image
-Output: Image
-Parameters: mean, std
-Functionality: Blurs the image.
+**Input:** Image
 
-### 3.3.3 Median Blur
-Type: Image Processing
-Input: Image
-Output: Image
-Parameters: mean, std
-Functionality: Blurs the image.
+**Output:** Image
 
-### 3.3.4 Bilateral Filter
-Type: Image Processing
-Input: Image
-Output: Image
-Parameters: 
-Functionality:
+**Parameter 1:** kernelX (range 0 - 30)
+
+**Parameter 2:** kernelY (range 0 - 30)
+
+**Functionality:** Blurs the image.
+
+
+### 3.4.2 Gaussian Blur
+**Type:** Image Processing
+
+**Input:** Image
+
+**Output:** Image
+
+**Parameter 1:** kernelX (range 0 - 30)
+
+**Parameter 2:** kernelY (range 0 - 30)
+
+**Functionality:** Blurs the image using a Gaussian.
+
+### 3.4.3 Median Blur
+**Type:** Image Processing
+
+**Input:** Image
+
+**Output:** Image
+
+**Parameter 1:** kernel (range 0 - 30)
+
+**Functionality:** Blurs the image using a median.
+
+
+### 3.4.4 Bilateral Filter
+**Type:** Image Processing
+
+**Input:** Image
+
+**Output:** Image
+
+**Parameter 1:** kernel (range 0 - 50)
+
+**Parameter 2:** sigma (range 0 - 200)
+
+**Functionality:** Blurs the image using a bilateral filter.
 
 
 ### 3.4.1 Canny
