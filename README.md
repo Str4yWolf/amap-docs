@@ -262,27 +262,45 @@ Here we will inspect the functionality and parameters of the action chips (right
 
 **Functionality:** Blurs the image using a bilateral filter.
 
+### 3.5 Feature Detection
+### 3.5.1 Canny
+**Type:** Feature Detection
 
-### 3.4.1 Canny
-Type: Feature Detection
-Input: Image
-Output: Image with features
-Parameters:
-Functionality: Detects features
+**Input:** Image
 
-### 3.4.2 Good Features to Tra
-Type: Feature Detection
-Input: Image
-Output: Image with features
-Parameters:
-Functionality: Detects features
+**Output:** Image with features
 
-### 3.4.3 ORB keypoints
-Type: Feature Detection
-Input: Image
-Output: Image with features
-Parameters:
-Functionality: Detects features
+**Parameter 1:** threshold1 (range 0 - 1000)
+
+**Parameter 2:** threshold2 (range 0 - 1000)
+
+**Parameter 3:** aperture_size (range 0 - 20)
+
+**Functionality:** Detects features.
+
+
+### 3.5.2 Good Features to Trac
+**Type:** Feature Detection
+
+**Input:** Image
+
+**Output:** Image with features
+
+**Parameter 1:** kernel (range 0 - 50)
+
+**Parameter 2:** sigma (range 0 - 200)
+
+**Functionality:** Detects features.
+
+
+### 3.5.3 ORB keypoints
+**Type:** Feature Detection
+
+**Input:** Image
+
+**Output:** Image with features
+
+**Functionality:** Detects keypoints.
 
 
 ### 3.5.1 Hough Line
@@ -489,4 +507,4 @@ This chapter deals with some more advanced topics.
 ### 5.3 Fine-tuning
 
 
-3:57
+5:00
