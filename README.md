@@ -25,6 +25,8 @@ AMAP is a joint effort by the [Image Processing Department of the University of 
 ## 1. Getting started
 AMAP Version 2.0 is currently available under https://bv.informatik.uni-hamburg.de/amap and can be used online provided that you have a stable internet connection. This chapter will help you create your first workspace.
 
+![AMAP Overview](./imgs/amap_overview.png "AMAP Overview")
+#### Fig. 1: An overview of AMAP
 
 ### 1.1 Loading an image
 Our first goal is to load some data into the ***central workspace*** of AMAP where you will perform your DIA tasks. 
