@@ -26,7 +26,7 @@ AMAP is a joint effort by the [Image Processing Department of the University of 
 AMAP Version 2.0 is currently available under https://bv.informatik.uni-hamburg.de/amap and can be used online provided that you have a stable internet connection. This chapter will help you create your first workspace.
 
 ![AMAP Overview](./imgs/amap_overview.png "AMAP Overview")
-#### Fig. 1: An overview of AMAP
+#### Fig. 1.0: An overview of AMAP
 
 ### 1.1 Loading an image
 Our first goal is to load some data into the ***central workspace*** of AMAP where you will perform your DIA tasks. 
@@ -36,7 +36,7 @@ To load your image, click the "+" icon on the ***main menu*** located at the top
 > Your image should be in a **JPG format** for all functions to work properly. To check what image format your image is, upload the image and click on the **flip over icon (5)**  on the **image menu** (detailed in **Chapter 5**) to toggle the notepad. Check to confirm whether the file name ends in .jpg, jpeg, .JPG, or JPEG.
 
 ![Flipping an image](./imgs/amap_image_flip.png "Flipping an image")
-#### Fig. 2: Flipping an image
+#### Fig. 1.1: Flipping an image
 
 
 ### 1.2 Action chips
@@ -49,7 +49,7 @@ A corresponding action chip will be generated that you can attach to your image 
 Your input image will update to preview what your image looks like after some function has been performed. You can also detach a chip by double clicking on it to revert the image to its original state.
 
 ![Using action chips](./imgs/amap_action_chips1.png "Using action chips")
-#### Fig. 3: We attach a "Binarization" chip to the input, and chain a "Skeletonize" chip to the result of "Binarization".
+#### Fig. 1.2: We attach a "Binarization" chip to the input, and chain a "Skeletonize" chip to the result of "Binarization".
 
 ### 1.3 Chaining action chips
 You can also chain compatible action chips which will connect automatically. Incompatible chips will repel each other. While the image preview now shows the processing result after going through all chips, you can also show intermediate previews (**Chapter 6.1.3**).
@@ -61,7 +61,7 @@ Detaching a block here will "split" your chain left of the block which you have 
 Plugs apply filters that change the appearance of the image / chip that it is attached to ***temporally*** and will not result in any changes reflected in the final result, unlike action chips.
 
 ![Using plugs](./imgs/amap_plugs1.png "Using plugs")
-#### Fig. 4: We increase the contrast of the input image using a "Contrast" plug.
+#### Fig. 1.4: We increase the contrast of the input image using a "Contrast" plug.
 
 ### 1.5 Deleting blocks
 To delete a block, activate the trash can at the bottom right by clicking on it. Now drag-&-drop the block you would like to delete.
@@ -69,7 +69,7 @@ To delete a block, activate the trash can at the bottom right by clicking on it.
 > Don't forget to **deactivate** the trash can after you are done deleting to avoid accidentally dragging and deleting blocks.
 
 ![Using the trash can](./imgs/amap_delete.png "Using the trash can")
-#### Fig. 5: Pulling an element toward the active (strong red) trash can.
+#### Fig. 1.5: Pulling an element toward the active (strong red) trash can.
 
 ### 1.6 Saving your data
 You can either export your image processing results or save your workspace to continue your task later. 
@@ -90,7 +90,7 @@ You have now been onboarded to the most basic functionality of AMAP. Please refe
 This chapter explains the Main Menu, helping you understand and navigate through the app. 
 
 ![Main Menu](./imgs/amap_main_menu.png "Main Menu")
-#### Fig. 6: The Main Menu
+#### Fig. 2.0: The Main Menu
 ```
 ##### (1): Add Image
 ##### (2): Save Workspace
@@ -113,7 +113,7 @@ The basic file operations are basically what we have already seen in **Chapter 1
 You can also load multiple images from your computer. This will load a stack of images that you can slide through using the ***up (6)*** and ***down (7) arrows*** on the image menu. DIA will be performed on the image that is shown on the stack.
 
 ![Image stack arrows](./imgs/amap_arrows.png "Image stack arrows")
-#### Fig. 7: Image stack arrows for navigation
+#### Fig. 2.1.1: Image stack arrows for navigation
 
 ### 2.2 Ruler, Protractor
 You can use geographic tools such as a ***ruler (4)*** and a ***protractor (5)*** that will be loaded into the workspace.
@@ -123,7 +123,7 @@ The ***ruler*** has two draggable dots connected by a straight line. The line's 
 The ***protractor*** consists of three dots. The middle dot, which is connected to the other two dots by sa traight line each, displays the angle in degrees the two lines shape at this dot. All dots can be dragged.
 
 ![Ruler and Protractor](./imgs/amap_ruler_protractor.png "Ruler and Protractor")
-#### Fig. 7: Ruler and Protractor
+#### Fig. 2.2: Ruler and Protractor
 
 ### 2.3 Selection rectangle
 This tool lets you select a rectangular subregion or region of interest (ROI) within some image. You can apply this tool at any "stage" of your image processing where you have an image preview. All subsequent chips will be apply their functions on the ROI you have selected.
@@ -145,12 +145,27 @@ The ***logs (9)*** will toggle a history of action you have done on the left sid
 ***Show scale and tilt (10)*** displays the scale of an image relative to its original size and its tilt (rotation) in degrees. It also shows the scaled image dimensions in pixels.
 
 ![Information Display](./imgs/amap_information_display.png "Information Display")
-#### Fig. 8: Information display of **activity log** (left) and **scale and tilt** (above the image).
+#### Fig. 2.5: Information display of **activity log** (left) and **scale and tilt** (above the image).
 
 ## 3 Functionality (Action chips)
 Here we will inspect the functionality and parameters of the action chips (right menu) in detail. Some more general image settings provided as plugs (bottom menu) will be explained in Chapter 4.
 
-
+![Functions Menu](./imgs/amap_action_chips2.png "Functions Menu")
+#### Fig. 3.0: Functions Menu with a dropdown of action chips
+```
+##### 3.1: Binarization
+##### 3.2: Other Image Enhancements
+##### 3.3: Noise
+##### 3.4: Filters
+##### 3.5: Feature Detection
+##### 3.6: Morphology
+##### 3.7: Layout Analysis
+##### 3.8: Propagate Actions
+##### 3.9: Contours
+##### 3.10: Spotting
+##### 3.11: Writer Identification
+##### 3.12: Transcription
+```
 ### 3.1 Binarization
 ### 3.1.1 OpenCV Binarization
 **Type:** Image Processing
@@ -165,6 +180,8 @@ Here we will inspect the functionality and parameters of the action chips (right
 
 **Functionality:** Image binarization maps all image pixel values of the input image to a binary value of 0 or 1. The threshold defines the lower bound at which a value of 1 should be assigned. Binarization takes the mean of all RGB colour channels.
 
+![Binarization Action Chip](./imgs/amap_action_chips3.png "Binarization Action Chip")
+#### Fig. 3.1.1: Binarization Action Chip with its parameters.
 
 ### 3.2 Other Image Enhancements
 ### 3.2.1 Histogram Eq 
@@ -581,6 +598,17 @@ Image View Settings can be found on the bottom menu and can be attached from bel
 
 The image preview on the input image will reflect both changes from the plugs and the action chips, but the image preview on top of action chips (toggable by clicking the top monitor icon) will show only the actual result (without effects from the plugs).
 
+![Image View Settings](./imgs/amap_image_settings_menu.png "Image View Settings")
+#### Fig. 4.0: Image View Settings
+```
+##### (1): Brightness
+##### (2): Contrast
+##### (3): Grayscale
+##### (4): Invert Colors
+##### (5): Opacity
+##### (6): Hue-Rotate
+```
+
 
 ### 4.1 Brightness
 **Range:** 0% - 400%
@@ -644,7 +672,18 @@ A value of 50% means that original and inverted image pixel values level each ot
 
 ## 5 Image menu
 The image menu mostly contains simple geographical settings for the input image. It can be found on the bottom left of the input image preview, provided that they are set visible on the ***main menu (11)***.
-
+![Image Menu](./imgs/amap_image_menu.png "Image Menu")
+#### Fig. 5.0: Image Menu
+```
+##### (1): Zoom in
+##### (2): Zoom out
+##### (3): Rotate left
+##### (4): Rotate right
+##### (5): Flip
+##### (6): Previous image
+##### (7): Next image
+##### (8): Toggle original image
+```
 **Zoom in (1)** increases the scale of the image by about 5% of its current scale.
 
 **Zoom out (2)** decreases the scale of the image by about 5% of its current scale.
@@ -685,6 +724,8 @@ You can stack images, which allows you to process multiple images with the same 
 ### 6.1.3 Image Previews
 The default image preview always shows the image result after going through the action chips' processing and image preview settings. However, you can always consult intermediate results by clicking on the monitor on top of the action chips (if available). These intermediate previews show all processing from the input image up to that chip and do not include effects from the image view setting filters.
 
+![Image Preview](./imgs/amap_image_preview.png "Image Preview")
+#### Fig. 6.1.3: Image Preview
 
 >You can also export intermediate results as shown on the previews by right-clicking the image and selecting **Save Image As ...** from the menu.
 
@@ -693,5 +734,10 @@ The default image preview always shows the image result after going through the 
 There are a few less obvious shortcuts which you can make use of:
 
 **Copy image** can be done by double-clicking your input image.
+
+**Toggle parameters** can be done by clicking the gear of action chips (when available). 
+
+![Gear Icon](./imgs/amap_gear.png "Gear Icon")
+#### Fig. 6.2.1: Gear icon in action chips
 
 **Dumbell** is an icon on the top left of your input image. Its functionality is a mystery.
