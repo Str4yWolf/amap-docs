@@ -35,6 +35,9 @@ To load your image, click the "+" icon on the ***main menu*** located at the top
 
 > Your image should be in a **JPG format** for all functions to work properly. To check what image format your image is, upload the image and click on the **flip over icon (5)**  on the **image menu** (detailed in **Chapter 5**) to toggle the notepad. Check to confirm whether the file name ends in .jpg, jpeg, .JPG, or JPEG.
 
+![Flipping an image](./imgs/amap_image_flip.png "Flipping an image")
+#### Fig. 2: Flipping an image
+
 
 ### 1.2 Action chips
 With your image in the workspace, we are all set up to perform some DIA. The ***functions menu*** on the right contains the respective functions for image processing, whereas the "image settings menu" at the bottom allows for temporal image view settings (see **1.4**).
@@ -45,6 +48,8 @@ A corresponding action chip will be generated that you can attach to your image 
 
 Your input image will update to preview what your image looks like after some function has been performed. You can also detach a chip by double clicking on it to revert the image to its original state.
 
+![Using action chips](./imgs/amap_action_chips1.png "Using action chips")
+#### Fig. 3: We attach a "Binarization" chip to the input, and chain a "Skeletonize" chip to the result of "Binarization".
 
 ### 1.3 Chaining action chips
 You can also chain compatible action chips which will connect automatically. Incompatible chips will repel each other. While the image preview now shows the processing result after going through all chips, you can also show intermediate previews (**Chapter 6.1.3**).
@@ -55,12 +60,16 @@ Detaching a block here will "split" your chain left of the block which you have 
 ### 1.4 Plugs
 Plugs apply filters that change the appearance of the image / chip that it is attached to ***temporally*** and will not result in any changes reflected in the final result, unlike action chips.
 
+![Using plugs](./imgs/amap_plugs1.png "Using plugs")
+#### Fig. 4: We increase the contrast of the input image using a "Contrast" plug.
 
 ### 1.5 Deleting blocks
 To delete a block, activate the trash can at the bottom right by clicking on it. Now drag-&-drop the block you would like to delete.
 
 > Don't forget to **deactivate** the trash can after you are done deleting to avoid accidentally dragging and deleting blocks.
 
+![Using the trash can](./imgs/amap_delete.png "Using the trash can")
+#### Fig. 5: Pulling an element toward the active (strong red) trash can.
 
 ### 1.6 Saving your data
 You can either export your image processing results or save your workspace to continue your task later. 
@@ -80,6 +89,20 @@ You have now been onboarded to the most basic functionality of AMAP. Please refe
 ## 2. Main Menu
 This chapter explains the Main Menu, helping you understand and navigate through the app. 
 
+![Main Menu](./imgs/amap_main_menu.png "Main Menu")
+#### Fig. 6: The Main Menu
+##### (1): Add Image
+##### (2): Save Workspace
+##### (3): Load Workspace
+##### (4): Ruler
+##### (5): Protractor
+##### (6): Hide all objects
+##### (7): Selection Rectangle
+##### (8): Toggle Lines
+##### (9): Logs
+##### (10): Show scale and tilt
+##### (11): Hide image icons
+##### (12): Help
 
 ### 2.1 File operations
 The basic file operations are basically what we have already seen in **Chapter 1**. You can ***add an image (1)***, ***save your workspace (2)***, and ***load a workspace (3)***.
