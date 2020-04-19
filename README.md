@@ -23,7 +23,7 @@ AMAP is a joint effort by the [Image Processing Department of the University of 
 
 
 ## 1. Getting started
-AMAP Version 2.0 is currently available under https://bv.informatik.uni-hamburg.de/amap and can be used online provided that you have a stable internet connection. This Chapter will help you create your first workspace.
+AMAP Version 2.0 is currently available under https://bv.informatik.uni-hamburg.de/amap and can be used online provided that you have a stable internet connection. This chapter will help you create your first workspace.
 
 
 ### 1.1 Loading an image
@@ -31,7 +31,7 @@ Our first goal is to load some data into the ***central workspace*** of AMAP whe
 
 To load your image, click the "+" icon on the ***main menu*** located at the top. Browse and select an image from your computer to upload it. 
 
-> Your image should be in a **JPG format** for all functions to work properly. To check what image format your image is, upload the image and click on the ***flip over icon (5)***  on the ***image menu*** (detailed in **Chapter 5**) to toggle the notepad. Check to confirm whether the file name ends in .jpg, jpeg, .JPG, or JPEG.
+> Your image should be in a **JPG format** for all functions to work properly. To check what image format your image is, upload the image and click on the **flip over icon (5)**  on the **image menu** (detailed in **Chapter 5**) to toggle the notepad. Check to confirm whether the file name ends in .jpg, jpeg, .JPG, or JPEG.
 
 
 ### 1.2 Action chips
@@ -41,11 +41,11 @@ Functions in AMAP are provided as so-called ***action chips*** which you can gen
 
 A corresponding action chip will be generated that you can attach to your image to perform its corresponding function. Many blocks allow for adjustable parameters settings which you can toggle by clicking the gear icon. For instance, the Binarization block at the very top of the functions menu lets you adjust a threshold with a circular slider.
 
-A preview will always show what an image looks like after some function has been performed. You can also detach a chip by double clicking on it.
+Your input image will update to preview what your image looks like after some function has been performed. You can also detach a chip by double clicking on it to revert the image to its original state.
 
 
 ### 1.3 Chaining action chips
-You can also chain compatible action chips which will connect automatically. Incompatible blocks will repel each other. The image preview will now show the state of the imput image after it has gone through the functions of the blocks in the exact order in which you have chained the chips. Hence the block farthest away from the input will reflect the result after passing through all action chips.
+You can also chain compatible action chips which will connect automatically. Incompatible chips will repel each other. While the image preview now shows the processing result after going through all chips, you can also show intermediate previews (**Chapter 6.1.3**).
 
 Detaching a block here will "split" your chain left of the block which you have clicked.
 
@@ -651,7 +651,8 @@ You can stack images, which allows you to process multiple images with the same 
 
 
 ### 6.1.3 Image Previews
-The image preview always shows the image result after going through the action chips' processing and image preview settings. If you prefer, you can always consult intermediate results by clicking on the monitor on top of the action chips (if available). That preview reflects all processing from the input image up to that chip and does not include effects of image view setting filters.
+The default image preview always shows the image result after going through the action chips' processing and image preview settings. However, you can always consult intermediate results by clicking on the monitor on top of the action chips (if available). These intermediate previews show all processing from the input image up to that chip and do not include effects from the image view setting filters.
+
 
 >You can also export intermediate results as shown on the previews by right-clicking the image and selecting **Save Image As ...** from the menu.
 
