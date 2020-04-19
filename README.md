@@ -672,6 +672,7 @@ A value of 50% means that original and inverted image pixel values level each ot
 
 ## 5 Image menu
 The image menu mostly contains simple geographical settings for the input image. It can be found on the bottom left of the input image preview, provided that they are set visible on the ***main menu (11)***.
+
 ![Image Menu](./imgs/amap_image_menu.png "Image Menu")
 #### Fig. 5.0: Image Menu
 ```
