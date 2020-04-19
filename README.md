@@ -91,6 +91,7 @@ This chapter explains the Main Menu, helping you understand and navigate through
 
 ![Main Menu](./imgs/amap_main_menu.png "Main Menu")
 #### Fig. 6: The Main Menu
+```
 ##### (1): Add Image
 ##### (2): Save Workspace
 ##### (3): Load Workspace
@@ -103,6 +104,7 @@ This chapter explains the Main Menu, helping you understand and navigate through
 ##### (10): Show scale and tilt
 ##### (11): Hide image icons
 ##### (12): Help
+```
 
 ### 2.1 File operations
 The basic file operations are basically what we have already seen in **Chapter 1**. You can ***add an image (1)***, ***save your workspace (2)***, and ***load a workspace (3)***.
@@ -110,6 +112,8 @@ The basic file operations are basically what we have already seen in **Chapter 1
 ### 2.1.1 Image stack
 You can also load multiple images from your computer. This will load a stack of images that you can slide through using the ***up (6)*** and ***down (7) arrows*** on the image menu. DIA will be performed on the image that is shown on the stack.
 
+![Image stack arrows](./imgs/amap_arrows.png "Image stack arrows")
+#### Fig. 7: Image stack arrows for navigation
 
 ### 2.2 Ruler, Protractor
 You can use geographic tools such as a ***ruler (4)*** and a ***protractor (5)*** that will be loaded into the workspace.
@@ -118,6 +122,8 @@ The ***ruler*** has two draggable dots connected by a straight line. The line's 
 
 The ***protractor*** consists of three dots. The middle dot, which is connected to the other two dots by sa traight line each, displays the angle in degrees the two lines shape at this dot. All dots can be dragged.
 
+![Ruler and Protractor](./imgs/amap_ruler_protractor.png "Ruler and Protractor")
+#### Fig. 7: Ruler and Protractor
 
 ### 2.3 Selection rectangle
 This tool lets you select a rectangular subregion or region of interest (ROI) within some image. You can apply this tool at any "stage" of your image processing where you have an image preview. All subsequent chips will be apply their functions on the ROI you have selected.
@@ -138,7 +144,8 @@ The ***logs (9)*** will toggle a history of action you have done on the left sid
 
 ***Show scale and tilt (10)*** displays the scale of an image relative to its original size and its tilt (rotation) in degrees. It also shows the scaled image dimensions in pixels.
 
-
+![Information Display](./imgs/amap_information_display.png "Information Display")
+#### Fig. 8: Information display of **activity log** (left) and **scale and tilt** (above the image).
 
 ## 3 Functionality (Action chips)
 Here we will inspect the functionality and parameters of the action chips (right menu) in detail. Some more general image settings provided as plugs (bottom menu) will be explained in Chapter 4.
