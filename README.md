@@ -25,7 +25,7 @@ AMAP is a joint effort by the [Image Processing Department of the University of 
 ## 1. Getting started
 AMAP Version 2.0 is currently available under https://bv.informatik.uni-hamburg.de/amap and can be used online provided that you have a stable internet connection. This chapter will help you create your first workspace.
 
-![AMAP Overview](./imgs/amap_overview.png "AMAP Overview")
+![AMAP Overview](./imgs/amap_overview2.png "AMAP Overview")
 #### Fig. 1.0: An overview of AMAP
 
 ### 1.1 Loading an image
@@ -35,7 +35,7 @@ To load your image, click the "+" icon on the ***main menu*** located at the top
 
 > Your image should be in a **JPG format** for all functions to work properly. To check what image format your image is, upload the image and click on the **flip over icon (5)**  on the **image menu** (detailed in **Chapter 5**) to toggle the notepad. Check to confirm whether the file name ends in .jpg, jpeg, .JPG, or JPEG.
 
-![Flipping an image](./imgs/amap_image_flip.png "Flipping an image")
+![Flipping an image](./imgs/amap_image_flip2.png "Flipping an image")
 #### Fig. 1.1: Flipping an image
 
 
@@ -48,7 +48,7 @@ A corresponding action chip will be generated that you can attach to your image 
 
 Your input image will update to preview what your image looks like after some function has been performed. You can also detach a chip by double clicking on it to revert the image to its original state.
 
-![Using action chips](./imgs/amap_action_chips1.png "Using action chips")
+![Using action chips](./imgs/amap_action_chips12.png "Using action chips")
 #### Fig. 1.2: We attach a "Binarization" chip to the input, and chain a "Skeletonize" chip to the result of "Binarization".
 
 ### 1.3 Chaining action chips
@@ -68,7 +68,7 @@ To delete a block, activate the trash can at the bottom right by clicking on it.
 
 > Don't forget to **deactivate** the trash can after you are done deleting to avoid accidentally dragging and deleting blocks.
 
-![Using the trash can](./imgs/amap_delete.png "Using the trash can")
+![Using the trash can](./imgs/amap_delete2.png "Using the trash can")
 #### Fig. 1.5: Pulling an element toward the active (strong red) trash can.
 
 ### 1.6 Saving your data
@@ -112,7 +112,7 @@ The basic file operations are basically what we have already seen in **Chapter 1
 ### 2.1.1 Image stack
 You can also load multiple images from your computer. This will load a stack of images that you can slide through using the ***up (6)*** and ***down (7) arrows*** on the image menu. DIA will be performed on the image that is shown on the stack.
 
-![Image stack arrows](./imgs/amap_arrows.png "Image stack arrows")
+![Image stack arrows](./imgs/amap_arrows2.png "Image stack arrows")
 #### Fig. 2.1.1: Image stack arrows for navigation
 
 ### 2.2 Ruler, Protractor
@@ -144,7 +144,7 @@ The ***logs (9)*** will toggle a history of action you have done on the left sid
 
 ***Show scale and tilt (10)*** displays the scale of an image relative to its original size and its tilt (rotation) in degrees. It also shows the scaled image dimensions in pixels.
 
-![Information Display](./imgs/amap_information_display.png "Information Display")
+![Information Display](./imgs/amap_information_display2.png "Information Display")
 #### Fig. 2.5: Information display of **activity log** (left) and **scale and tilt** (above the image).
 
 ## 3 Functionality (Action chips)
@@ -725,7 +725,7 @@ You can stack images, which allows you to process multiple images with the same 
 ### 6.1.3 Image Previews
 The default image preview always shows the image result after going through the action chips' processing and image preview settings. However, you can always consult intermediate results by clicking on the monitor on top of the action chips (if available). These intermediate previews show all processing from the input image up to that chip and do not include effects from the image view setting filters.
 
-![Image Preview](./imgs/amap_image_preview.png "Image Preview")
+![Image Preview](./imgs/amap_image_preview2.png "Image Preview")
 #### Fig. 6.1.3: Image Preview
 
 >You can also export intermediate results as shown on the previews by right-clicking the image and selecting **Save Image As ...** from the menu.
