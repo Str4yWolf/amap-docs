@@ -424,6 +424,8 @@ Here we will inspect the functionality and parameters of the action chips (right
 
 **Functionality:** Adds bounding boxes around visual components.
 
+![Tesseract Lines Action Chip](./imgs/amap_tesseract_lines.png "Tesseract Lines Action Chip")
+#### Fig. 3.7.1: Tesseract Lines Action Chip in action.
 
 ### 3.7.2 Tesseract Characters
 **Type:** Layout Analysis
@@ -434,6 +436,8 @@ Here we will inspect the functionality and parameters of the action chips (right
 
 **Functionality:** Adds bounding boxes around small visual components.
 
+![Tesseract Characters Action Chip](./imgs/amap_tesseract_characters.png "Tesseract Characters Action Chip")
+#### Fig. 3.7.2: Tesseract Characters Action Chip in action.
 
 ### 3.7.3 Histogram Lines
 **Type:** Layout Analysis
