@@ -60,7 +60,7 @@ Detaching a block here will "split" your chain left of the block which you have 
 ### 1.4 Plugs
 Plugs apply filters that change the appearance of the image / chip that it is attached to ***temporally*** and will not result in any changes reflected in the final result, unlike action chips.
 
-![Using plugs](./imgs/amap_plugs1.png "Using plugs")
+![Using plugs](./imgs/amap_plugs12.png "Using plugs")
 #### Fig. 1.4: We increase the contrast of the input image using a "Contrast" plug.
 
 ### 1.5 Deleting blocks
