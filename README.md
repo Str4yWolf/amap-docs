@@ -18,8 +18,8 @@ Table of contents
 ## 0. Introduction
 AMAP is a platform-independent tool that includes a toolbox of document image analysis (DIA) functions. By providing a graphical user interface (GUI), it aims to make elements of traditional programming available to everyone without having to learn an actual programming language. Instead, AMAP uses ***Visual Programming*** to allow its users to generate and combine blocks to build their own image processing solutions. 
 
-AMAP is a joint effort by the [Image Processing Department of the University of Hamburg](https://www.inf.uni-hamburg.de/en/inst/ab/bv.html) and is partly funded by the DFG (German research association) and SFB (Department of special studies). It is an open-source project.
-
+AMAP (Advanced Manuscript Analysis Portal) is an outcome of the Scientific Service Project Z03 "Image Processing Methods for Determining Visual Manuscript and Character Features" (2015-2019) as part of the SFB 950 "Manuscript Cultures in Asia, Africa and Europe" funded by DFG/German Research Foundation (see [https://www.manuscript-cultures.uni-hamburg.de/Projekte_p2_e.html](https://www.manuscript-cultures.uni-hamburg.de/Projekte_p2_e.html) for 
+details). AMAP has been realized by a team effort in the iXMan_Lab of the Department of Informatics at Universität Hamburg (for details see [https://www.inf.uni-hamburg.de/en/inst/ab/bv/projects/ixmanlab.html](https://www.inf.uni-hamburg.de/en/inst/ab/bv/projects/ixmanlab.html)) and is an open-source project.
 
 
 ## 1. Getting started
