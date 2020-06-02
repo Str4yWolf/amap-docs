@@ -736,7 +736,7 @@ The default image preview always shows the image result after going through the 
 
 
 ### 6.1.4 Loops with action chips
-Looping is a useful element of classical programming languages as it allows for repeating actions with only one instruction and thus save lots of manual repetition. In AMAP, you can create loops that systematically go through parameters.
+Looping is a useful element of classical programming languages as it allows for repeating actions with only having to configure settings once and thus save lots of manual repetition. In AMAP, you can create loops that systematically go through parameters.
 
 For example, if you would like to binarize an image and see which threshold works best, you could try different thresholds systematically with a given step size.
 
@@ -744,7 +744,7 @@ In order to do that, you will need to generate an action chip. In the parameters
 The left slider defines a lower bound, the middle slider defines an upper bound, and the right slider defines a step size. By adjusting each slider, you can tell the action chip to loop a parameter from the lower bound to the upper bound using the step size.
 
 
-![Loop Icon](./imgs/amap_loops.png "Loop Icon")
+![Loop Icon](./imgs/amap-loops.png "Loop Icon")
 #### Fig. 6.1.4: Loop settings for an action chip
 
 To activate the loop, click the lightning icon that shows up on top of the action chip as soon as you click any circular arrows icon. Make sure you attach your action chip to your current image processing result. If everything worked out well, you should get a stack of images corresponding to the parameters you looped through.
