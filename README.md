@@ -735,6 +735,19 @@ The default image preview always shows the image result after going through the 
 >You can also export intermediate results as shown on the previews by right-clicking the image and selecting **Save Image As ...** from the menu.
 
 
+### 6.1.4 Loops with action chips
+Looping is a useful element of classical programming languages as it allows for repeating actions with only one instruction and thus save lots of manual repetition. In AMAP, you can create loops that systematically go through parameters.
+
+For example, if you would like to binarize an image and see which threshold works best, you could try different thresholds systematically with a given step size.
+
+In order to do that, you will need to generate an action chip. In the parameters, you will see an icon with circular arrows associated with each loopable parameter. Click on that icon to reveal three sliders.
+The left slider defines a lower bound, the middle slider defines an upper bound, and the right slider defines a step size. By adjusting each slider, you can tell the action chip to loop a parameter from the lower bound to the upper bound using the step size.
+
+To activate the loop, click the lightning icon that shows up on top of the action chip as soon as you click any circular arrows icon. Make sure you attach your action chip to your current image processing result. If everything worked out well, you should get a stack of images corresponding to the parameters you looped through.
+
+> You can check the parameter settings of a single image by flipping it over (see 1.1)
+> You can also run loops through different parameters at the same time
+
 ### 6.2 Shortcuts
 There are a few less obvious shortcuts which you can make use of:
 
