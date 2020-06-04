@@ -1,5 +1,5 @@
 ﻿# AMAP Docs
-AMAP - Advanced Manuscript Analysis Portal - is a software tool to aid the study of manuscripts. This documentation should be helpful in guiding you through the onboarding process, app navigation, and functinality.
+AMAP - Advanced Manuscript Analysis Portal - is a software tool to aid the study of manuscripts. This documentation should be helpful in guiding you through the onboarding process, app navigation, and functionality.
 
 
 ```
