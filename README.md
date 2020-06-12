@@ -762,4 +762,4 @@ There are a few less obvious shortcuts which you can make use of:
 ![Gear Icon](./imgs/amap_gear.png "Gear Icon")
 #### Fig. 6.2.1: Gear icon in action chips
 
-**Dumbell** is an icon on the top left of your input image. Its functionality is a mystery.
+**Dumbell** is an icon on the top left of your input image. It can be used to pin the image to the workspace to prevent it from moving around.
